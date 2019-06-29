@@ -1,0 +1,7 @@
+peppers.bmp 
+secret_key.txt 
+pepper.bmp 
+criptat.bmp 
+semi_decr.bmp 
+decriptat.bmp 
+

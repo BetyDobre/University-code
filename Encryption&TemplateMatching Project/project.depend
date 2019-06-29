@@ -1,0 +1,346 @@
+# depslib dependency file v1.0
+1545251022 source:c:\users\beti\desktop\proiect pp\project\main.c
+	<stdio.h>
+	"utile.h"
+
+1545250499 source:c:\users\beti\desktop\proiect pp\project\xorshift.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1544454564 source:c:\users\beti\desktop\proiect pp\project\liniarizare.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1544454572 source:c:\users\beti\desktop\proiect pp\project\salv_ext.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1544454587 c:\users\beti\desktop\proiect pp\project\utile.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1544459698 source:c:\users\beti\desktop\proiect pp\project\perm_aleatoare.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1544460404 source:c:\users\beti\desktop\proiect pp\project\permuta.c
+	<string.h>
+	"utile.h"
+
+1545249669 source:c:\users\beti\desktop\proiect pp\project\criptare.c
+	<stdio.h>
+	"utile.h"
+
+1545167343 source:c:\users\beti\desktop\proiect pp\project\chi.c
+	<stdio.h>
+	<math.h>
+	"utile.h"
+
+1545243968 source:c:\users\beti\desktop\proiect pp\project\decriptare.c
+	<stdio.h>
+	"utile.h"
+
+1545242191 source:c:\users\beti\desktop\proiect pp\project\decriptare_final.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1545242173 source:c:\users\beti\desktop\proiect pp\project\perm_decriptare.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1545257175 source:c:\users\oly\desktop\project\criptare.c
+	<stdio.h>
+	"utile.h"
+
+1544454588 c:\users\oly\desktop\project\utile.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1545254372 source:c:\users\oly\desktop\project\liniarizare.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1545255543 source:c:\users\oly\desktop\project\perm_aleatoare.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1544460406 source:c:\users\oly\desktop\project\permuta.c
+	<string.h>
+	"utile.h"
+
+1545254408 source:c:\users\oly\desktop\project\salv_ext.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1545255575 source:c:\users\oly\desktop\project\xorshift.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1545252742 source:c:\users\oly\desktop\project\chi.c
+	<stdio.h>
+	<math.h>
+	"utile.h"
+
+1545254644 source:c:\users\oly\desktop\project\main.c
+	<stdio.h>
+	"utile.h"
+
+1545316846 source:c:\users\beti\desktop\proiect pp\project1\chi.c
+	<stdio.h>
+	<math.h>
+	"utile.h"
+
+1544454588 c:\users\beti\desktop\proiect pp\project1\utile.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1545308237 source:c:\users\beti\desktop\proiect pp\project1\criptare.c
+	<stdio.h>
+	"utile.h"
+
+1545254374 source:c:\users\beti\desktop\proiect pp\project1\liniarizare.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1545316963 source:c:\users\beti\desktop\proiect pp\project1\main.c
+	<stdio.h>
+	"utile.h"
+
+1545308247 source:c:\users\beti\desktop\proiect pp\project1\perm_aleatoare.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1545308243 source:c:\users\beti\desktop\proiect pp\project1\permuta.c
+	<string.h>
+	"utile.h"
+
+1545316706 source:c:\users\beti\desktop\proiect pp\project1\salv_ext.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1545257288 source:c:\users\beti\desktop\proiect pp\project1\xorshift.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1545308220 source:c:\users\beti\desktop\proiect pp\project1\permuta_decriptare.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1545314813 source:c:\users\beti\desktop\proiect pp\project1\permutare_inversa.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1545315764 source:c:\users\beti\desktop\proiect pp\project1\decriptare1.c
+	<stdio.h>
+	"utile.h"
+
+1546442468 source:c:\users\beti\desktop\proiect pp\dobre mihaela beatrice-grupa 142\chi.c
+	<stdio.h>
+	<math.h>
+	"utile.h"
+
+1546442185 c:\users\beti\desktop\proiect pp\dobre mihaela beatrice-grupa 142\utile.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1546550535 source:c:\users\beti\desktop\proiect pp\dobre mihaela beatrice-grupa 142\criptare.c
+	<stdio.h>
+	"utile.h"
+
+1545315764 source:c:\users\beti\desktop\proiect pp\dobre mihaela beatrice-grupa 142\decriptare1.c
+	<stdio.h>
+	"utile.h"
+
+1546550477 source:c:\users\beti\desktop\proiect pp\dobre mihaela beatrice-grupa 142\liniarizare.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1546550496 source:c:\users\beti\desktop\proiect pp\dobre mihaela beatrice-grupa 142\perm_aleatoare.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1546550504 source:c:\users\beti\desktop\proiect pp\dobre mihaela beatrice-grupa 142\permuta.c
+	<string.h>
+	"utile.h"
+
+1546442507 source:c:\users\beti\desktop\proiect pp\dobre mihaela beatrice-grupa 142\permuta_decriptare.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1545314813 source:c:\users\beti\desktop\proiect pp\dobre mihaela beatrice-grupa 142\permutare_inversa.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1546442355 source:c:\users\beti\desktop\proiect pp\dobre mihaela beatrice-grupa 142\salv_ext.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1546429197 source:c:\users\beti\desktop\proiect pp\dobre mihaela beatrice-grupa 142\xorshift.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1546550692 source:c:\users\beti\desktop\proiect pp\dobre mihaela beatrice-grupa 142\citire_completa.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1546550834 source:c:\users\beti\desktop\proiect pp\dobre mihaela beatrice-grupa 142\citire_img.c
+	<stdio.h>
+	<string.h>
+	"utile.h"
+
+1546812495 source:c:\users\beti\desktop\proiect pp\dobre mihaela beatrice-grupa 142\colorare.c
+	<stdlib.h>
+	<stdio.h>
+	"utile.h"
+
+1546434751 source:c:\users\beti\desktop\proiect pp\dobre mihaela beatrice-grupa 142\grayscale.c
+	<stdio.h>
+	"utile.h"
+
+1546556570 source:c:\users\beti\desktop\proiect pp\dobre mihaela beatrice-grupa 142\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utile.h"
+
+1546434785 source:c:\users\beti\desktop\proiect pp\dobre mihaela beatrice-grupa 142\matrice_img.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1546434812 source:c:\users\beti\desktop\proiect pp\dobre mihaela beatrice-grupa 142\qsort_detectii.c
+	<stdlib.h>
+	<stdio.h>
+	"utile.h"
+
+1546442613 source:c:\users\beti\desktop\proiect pp\dobre mihaela beatrice-grupa 142\salvare.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1546550618 source:c:\users\beti\desktop\proiect pp\dobre mihaela beatrice-grupa 142\template_matching.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+	<math.h>
+
+1546446068 source:c:\users\betty\documents\proiect pp\dobre mihaela beatrice-grupa 142\chi.c
+	<stdio.h>
+	<math.h>
+	"utile.h"
+
+1546445785 c:\users\betty\documents\proiect pp\dobre mihaela beatrice-grupa 142\utile.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1546554292 source:c:\users\betty\documents\proiect pp\dobre mihaela beatrice-grupa 142\citire_completa.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1546554434 source:c:\users\betty\documents\proiect pp\dobre mihaela beatrice-grupa 142\citire_img.c
+	<stdio.h>
+	<string.h>
+	"utile.h"
+
+1546816095 source:c:\users\betty\documents\proiect pp\dobre mihaela beatrice-grupa 142\colorare.c
+	<stdlib.h>
+	<stdio.h>
+	"utile.h"
+
+1546554135 source:c:\users\betty\documents\proiect pp\dobre mihaela beatrice-grupa 142\criptare.c
+	<stdio.h>
+	"utile.h"
+
+1545319364 source:c:\users\betty\documents\proiect pp\dobre mihaela beatrice-grupa 142\decriptare1.c
+	<stdio.h>
+	"utile.h"
+
+1546438351 source:c:\users\betty\documents\proiect pp\dobre mihaela beatrice-grupa 142\grayscale.c
+	<stdio.h>
+	"utile.h"
+
+1546554077 source:c:\users\betty\documents\proiect pp\dobre mihaela beatrice-grupa 142\liniarizare.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1546560170 source:c:\users\betty\documents\proiect pp\dobre mihaela beatrice-grupa 142\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utile.h"
+
+1546554096 source:c:\users\betty\documents\proiect pp\dobre mihaela beatrice-grupa 142\perm_aleatoare.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1546554104 source:c:\users\betty\documents\proiect pp\dobre mihaela beatrice-grupa 142\permuta.c
+	<string.h>
+	"utile.h"
+
+1546446107 source:c:\users\betty\documents\proiect pp\dobre mihaela beatrice-grupa 142\permuta_decriptare.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1545318413 source:c:\users\betty\documents\proiect pp\dobre mihaela beatrice-grupa 142\permutare_inversa.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1546438412 source:c:\users\betty\documents\proiect pp\dobre mihaela beatrice-grupa 142\qsort_detectii.c
+	<stdlib.h>
+	<stdio.h>
+	"utile.h"
+
+1546445955 source:c:\users\betty\documents\proiect pp\dobre mihaela beatrice-grupa 142\salv_ext.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1546446213 source:c:\users\betty\documents\proiect pp\dobre mihaela beatrice-grupa 142\salvare.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+
+1546554218 source:c:\users\betty\documents\proiect pp\dobre mihaela beatrice-grupa 142\template_matching.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+	<math.h>
+
+1546432797 source:c:\users\betty\documents\proiect pp\dobre mihaela beatrice-grupa 142\xorshift.c
+	<stdio.h>
+	<stdlib.h>
+	"utile.h"
+

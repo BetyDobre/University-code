@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="project" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/project" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/project" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="chi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="citire_completa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="citire_img.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="colorare.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="criptare.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="decriptare1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="grayscale.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="liniarizare.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="perm_aleatoare.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="permuta.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="permuta_decriptare.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="permutare_inversa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="qsort_detectii.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="salv_ext.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="salvare.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="template_matching.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="utile.h" />
+		<Unit filename="xorshift.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
