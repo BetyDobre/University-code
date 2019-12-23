@@ -5,7 +5,7 @@ For the first part(the encryption), the objective was to encrypt and
 decrypt an image by using a non-chaos based image encryption
 scheme. It consist in a pixel substitution algorithm that uses a
 secret external key. The second part(pattern recognition), is a project that focuses on the character recognition by using an
-template matching algorithm
+template matching algorithm.
 ## Proiect1_POO
   Various operations applied to a circular linked list using OOP concepts.
 ## Proiect2_POO
@@ -17,4 +17,4 @@ the map. Each player make only one move per round and he cannot step on someone 
 ends when there are no more squares to be explored or the players either cannot move or they found the treasures already.
 
 ## Proiect3_POO
-Implemented a manual Multiset with all specific operations 
+Implemented a manual Multiset with all specific operations.
