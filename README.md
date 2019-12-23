@@ -9,7 +9,7 @@ template matching algorithm.
 ## Proiect1_POO
   Various operations applied to a circular linked list using OOP concepts.
 ## Proiect2_POO
-  ### Treasure Hunt Game in C++
+  #### Treasure Hunt Game in C++
 This project is created to highlight the following principles of OOP: class inherintance, abstraction of data and behavior, polymorphism
 and virtual metods. The game consist in a map which there are 3
 treasures and 4 seekers. The seekers are placed in each corner of
