@@ -11,3 +11,4 @@ the map. Each player make only one move per round and he cannot step on someone 
 ends when there are no more squares to be explored or the players either cannot move or they found the treasures already.
 
 ## Proiect3_POO
+Implemented a manual Multiset with all specific operations 
