@@ -1,5 +1,11 @@
 # University-code
 
+## Encryption&TemplateMatching Project
+For the first part(the encryption), the objective was to encrypt and
+decrypt an image by using a non-chaos based image encryption
+scheme. It consist in a pixel substitution algorithm that uses a
+secret external key. The second part(pattern recognition), is a project that focuses on the character recognition by using an
+template matching algorithm
 ## Proiect1_POO
   Various operations applied to a circular linked list using OOP concepts.
 ## Proiect2_POO
