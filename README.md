@@ -18,3 +18,7 @@ ends when there are no more squares to be explored or the players either cannot 
 
 ## Proiect3_POO
 Implemented a manual Multiset with all specific operations.
+
+
+## ValiDeco Website
+Online shop for handmade decorations. It is created using HTML for the context and structure of the pages, CSS for stylization, JavaScript for sort and filter application, different kind of animations and Node.js to create a server for clients/admins, login/logout application and to procces order forms.
