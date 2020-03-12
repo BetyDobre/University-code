@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Comenzile magazinului</title>
+
+	<meta charset="utf-8">
+	<meta name="author" content="Dobre Beatrice"/>
+	<link type="text/css" rel = "stylesheet" href="../css/css_general.css"/>
+	<link rel="stylesheet" type = "text/css" href="css/stil.css"/>
+	<style>
+	table td, table th{
+		border:1px solid black;
+	}
+	</style>
+	<script>
+		window.onload = function() {
+			function selectare(){
+				var trs = document.querySelectorAll("tr");
+				for (var i = 0; i < trs.length; i++)
+					(function (e) {
+						trs[e].addEventListener("click", function () {
+						this.classList.add('selectat');
+						}, false);
+					})(i);
+			}
+
+			selectare();
+
+			document.getElementById("livrate").onclick = function() {
+				var liv = document.getElementsByClassName("selectat");
+				while(liv.length > 0){
+					liv[0].remove();
+					liv[0].classList.remove("selectat");
+				}
+			}
+			/*var td = liv[0].getElementsByTagName("td");
+			var removeElem = td[0].innerHTML;
+			console.log(removeElem);
+			var data = fs.readFileSync('comenzi.json');
+			var json = JSON.parse(data);
+			var comenzi = json.comenzi;
+			json.comenzi = comenzi.filter((comanda) => { return comanda.username !== removeElem });
+			fs.writeFileSync('comenzi.json', JSON.stringify(json, null, 2));*/
+		}
+		</script>
+</head>
+<body class="container">
+
+<header>
+    <%- include ("../fragmente/header") %>
+</header>
+
+<main>
+    <div class="afisaj">
+        <h1>Comenzi</h1>
+    </div>
+	<table id = "tabel">
+	  <tr>
+		<th>Nume si prenume</th><th>Email</th><th>Numar de telefon</th><th>Produs</th><th>Aditional</th><th>Oras</th><th>Adresa</th><th>Comentarii</th><th>Plata</th>
+	  </tr>
+	  <% for (var i = 0; i < comenzi.length; i++) { %>
+		<tr>
+		  <td><%= comenzi[i].nume %></td>
+		  <td><%= comenzi[i].email %></td>
+		  <td><%= comenzi[i].telefon %></td>
+		  <td><%= comenzi[i].produs %></td>
+		  <td><%= comenzi[i].aditional %></td>
+		  <td><%= comenzi[i].oras %></td>
+		  <td><%= comenzi[i].adresa %></td>
+		  <td><%= comenzi[i].comments %></td>
+		  <td><%= comenzi[i].plata %></td>
+		</tr>    
+	  <% } %>
+	</table>
+
+	<br/>
+	<button id = "livrate">Livrate</button>
+</main>
+
+<footer>
+    <%- include("../fragmente/footer")%>
+</footer>
+</body>
+</html>

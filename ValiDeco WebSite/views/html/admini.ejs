@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Admini</title>
+
+	<meta charset="utf-8">
+	<meta name="author" content="Dobre Beatrice"/>
+	<link type="text/css" rel = "stylesheet" href="../css/css_general.css"/>
+	<link rel="stylesheet" type = "text/css" href="css/stil.css"/>
+	<style>
+	table td, table th{
+		border:1px solid black;
+	}
+	</style>
+</head>
+<body class="container">
+
+<header>
+    <%- include ("../fragmente/header") %>
+</header>
+
+<main>
+	<div class="afisaj">
+        <h1>Adaugare admin nou</h1>
+		</p>
+		<% if(!locals.rsstatus) { %>
+		<form method="post" class="date">
+			<p>
+			<label>
+				Username: <input type = "text" name = "username" value = "">
+			</label>
+			</p>
+			<p>
+			<label>
+				Nume si prenume: <input type = "text" name = "nume" value = "">
+			</label>
+			</p>
+			<p>
+				<label>
+					Email: <input type = "text" name = "email" value = ""  size = "50">
+				</label>
+				</p>
+			<p>
+			<label>
+				Parola: <input type = "password" name = "parola" value = "">
+			</label>
+			</p>
+			<p>
+			<label>
+				Reintroduceti parola: <input type = "password" name = "rparola" value = "">
+			</label>
+			</p>
+			<p>		
+			<input type = "submit" value = "Trimite">
+			</p>
+		</form>
+		<% } else if(rsstatus=="ok"){ %>
+			<p>Date introduse</p>
+		<% } else {%>
+			<p>Eroare ! Formularul nu a putut fi trimis. Va rugam reincercati !</p>
+		<% } %>
+    </div>
+</main>
+
+<footer>
+    <%- include("../fragmente/footer")%>
+</footer>
+
+</body>
+</html>

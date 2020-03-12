@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ro">
+
+<head>
+<title>Decoratiuni de Paste </title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Diferite decoratiuni pentru casa si pentru copii de Paste">
+	<meta name="keywords" content="produse, decoratiuni, handmade, Paste, cadou, iepuras, ou">
+	<meta name="author" content="Dobre Beatrice">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/css_general.css"/>
+<link rel="stylesheet" type="text/css" href="css/grid.css"/>
+<link type="text/css" rel="stylesheet" href="../css/stil.css"/>
+<script src="scripts/script.js"></script>
+</head>
+
+<body onload="loadPageFunction()">
+
+<header>
+<%- include ("../fragmente/header")%>
+</header>
+
+<h1>Decoratiuni de Paste</h1>
+
+
+<main>
+<img class = "imagine" src="./images/Paste/oua.jpg" onmouseover = "onMouseOver()" onmouseout = "onMouseOut()" title ="Iepuras" height = "100" width="150">
+<div class = "pfontcustom">Pastele este sarbatoarea pe care o asteptam cu totii primavara aceasta, chiar daca vrea nu prea tine cu noi. Este momentul in care toti cei dragi se aduna la masa si uita de toate problele pentru a savura deliciile pregatite de gospodinele casei.
+
+Daca anul acesta esti gazda, ti-am pregatit, in urmatorul articol, o lista cu idei fabuloase pentru a face ca masa de Paste sa fie speciala. Cei mici vor fi impresionati de dulciurile puse in sticle cu forma unor iepurasi, iar ouale de Paste vor straluci daca le vei vopsi in mai multe culori.</div>
+<br/>
+
+<br/><br/>
+<select name="sortPret" id = "modalitate">
+  <option value = "alege">Produse sortate...</option>
+  <option value="crescator">Pret crescator</option>
+  <option value="descrescator">Pret descrescator</option>
+</select>
+</br><br/>
+
+<input type = "range" min = "0" max = "100" step="10" id = "range" oninput = "rangeSort()" >0..100</label>
+<br/>
+<p id ="valoare"></p>
+<br/>
+<input type="text" id="myInput" onkeyup="search()" placeholder="Search for names.." title="Type in a name">
+<article class = "grid-container">
+
+<figure class = "grid-item">
+<img src = "images/Paste/p1.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Paste" height = "430" width = "300">
+<figcaption> Cos cu flori din portelan la rece si elemente pascale </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Paste/p2.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Paste" height = "430" width = "320">
+<figcaption> Aranjament cu flori din portelan la rece si elemente pascale </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Paste/p3.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Paste" height = "430" width = "320">
+<figcaption> Cos cu flori din portelan la rece si elemente pascale </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Paste/p4.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Paste" height = "430" width = "320">
+<figcaption> Ou de Paste decorat cu portelan la rece </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Paste/p5.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Paste" height = "430" width = "320">
+<figcaption> Ou de Paste decorat cu portelan la rece </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Paste/p6.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Paste" height = "430" width = "320">
+<figcaption> Ou de Paste decorat cu portelan la rece </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Paste/p7.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Paste" height = "430" width = "320">
+<figcaption> Ou de Paste decorat cu portelan la rece </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Paste/p8.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Paste" height = "430" width = "320">
+<figcaption> Ou de Paste decorat cu portelan la rece </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Paste/p9.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Paste" height = "300" width = "400">
+<figcaption> Cos cu flori din portelan la rece si elemente pascale </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Paste/p10.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Paste" height = "430" width = "320">
+<figcaption> Figurina iepuras de paste handmade </figcaption>
+</figure>
+
+</article>
+<p>Preturi: </p>
+<ol id = "lista">
+	<li >60 LEI</li>
+	<li >30 LEI</li>
+	<li >30 LEI</li>
+	<li >20 LEI</li>
+	<li >20 LEI</li>
+	<li >20 LEI</li>
+	<li >20 LEI</li>
+	<li >20 LEI</li>
+	<li >50 LEI</li>
+	<li>80 LEI</li>
+</ol>
+</main>
+<footer>
+<%- include("../fragmente/footer")%>
+</footer>
+</body>
+<script src="scripts/scriptPaste.js"></script>
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ro">
+
+<head>
+
+<title>Decoratiuni de Craciun </title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Diferite decoratiuni pentru casa in preajma Cracinului">
+	<meta name="keywords" content="decoratiuni, handmade, Craciun, cadou, iarna, coronita, masa, ghirlanda,glob">
+	<meta name="author" content="Dobre Beatrice">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/css_general.css"/>
+	<link rel="stylesheet" type="text/css" href="css/grid.css"/>
+	<script src="scripts/script.js"></script>
+	
+</head>
+
+<body onload="loadPageFunction()">
+
+<header>
+<h1>Decoratiuni de Craciun</h1>
+</header>
+
+<main>
+
+<audio controls>
+	<source src="sounds/rudolph.mp3" type="audio/mpeg">
+	Your browser does not support the audio element
+</audio>
+<br/>
+<button id="animatie">Porneste animatia</button>
+<div id ="cer">
+	<div id = "animate"></div>
+</div>
+<p id = "error"></p>	
+	
+<br/>
+<img class ="glob" src = "https://n8h7m9s3.stackpathcdn.com/wp-content/uploads/2017/12/Craciun.jpg" alt = "Imaginea nu poate fi incarcata" title = "Glob">
+<br/><br/>
+<select name="sortPret" id = "modalitate">
+  <option value = "alege">Produse sortate...</option>
+  <option value="crescator">Pret crescator</option>
+  <option value="descrescator">Pret descrescator</option>
+</select>
+</br><br/>
+
+<input type = "range" min = "0" max = "100" step="10" id = "range" oninput = "rangeSort()" >0..100</label>
+<br/>
+<p id ="valoare"></p>
+<br/>
+<input type="text" id="myInput" onkeyup="search()" placeholder="Search for names.." title="Type in a name">
+<article class = "grid-container">
+
+<figure class = "grid-item">
+<img src = "images/Craciun/c1.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Craciun" height = "410" width = "300">
+<figcaption> Coronita pentru usa decorativa de iarna  </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Craciun/c2.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Craciun" height = "410" width = "300">
+<figcaption> Aranjament de iarna cu lumanare  </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Craciun/c4.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Craciun" height = "410" width = "300">
+<figcaption>Aranjament de iarna cu lumanare  </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Craciun/c6.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Craciun" height = "410" width = "300">
+<figcaption> Aranjament pentru masa de Craciun  </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Craciun/c7.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Craciun" height = "410" width = "300">
+<figcaption> Sania lui Mos Craciun </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Craciun/c10.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Craciun" height = "410" width = "300">
+<figcaption> Aranjament pentru masa de Craciun </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Craciun/c11.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Craciun" height = "410" width = "300">
+<figcaption> Aranjament pentru masa de Craciun</figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Craciun/c12.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Craciun" height = "360" width = "400">
+<figcaption> Aranjament pentru masa de Craciun </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Craciun/c13.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Craciun" height = "360" width = "400">
+<figcaption> Aranjament pentru masa de Craciun </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Craciun/c14.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Craciun" height = "410" width = "300">
+<figcaption> Coronita pentru usa decorativa de iarna </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Craciun/c16.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Craciun" height = "410" width = "300">
+<figcaption> Coronita pentru usa decorativa de iarna </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Craciun/c17.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Craciun" height = "410" width = "300">
+<figcaption> Brad decorativ din conuri </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Craciun/c19.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament de Craciun" height = "360" width = "400">
+<figcaption> Armata din omuleti de zapada </figcaption>
+</figure>
+
+</article>
+
+
+<p>Preturi: </p>
+<ol id = "lista">
+	<li>50 LEI</li>
+	<li>30 LEI</li>
+	<li>50 LEI</li>
+	<li>50 LEI</li>
+	<li>20 LEI</li>
+	<li>50 LEI</li>
+	<li>40 LEI</li>
+	<li>70 LEI</li>
+	<li>70 LEI</li>
+	<li>50 LEI</li>
+	<li>50 LEI</li>
+	<li>50 LEI</li>
+	<li>30 LEI</li>
+</ol>
+</main>
+
+</body>
+<script src="scripts/scriptCraciun.js"></script>
+</html>

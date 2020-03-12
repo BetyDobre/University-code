@@ -1,0 +1,20 @@
+
+<nav>
+	<ul class="menu1" >
+            <li><a href="/">Home</a></li>
+            <li><a href="/inregistrare_clienti">Client nou</a></li>
+            
+			<% if(locals.user && user.rol == "admin"){ %>
+				<li><a href = "/comenzi">Lista comenzi</a></li>
+				<li><a href = "/clienti">Lista clienti</a></li>
+				<li><a href = "/admini">Admin nou</a></li>
+			<% } %>
+			<% if(locals.user){ %>
+			<li><a href="/formular_comanda">Comanda</a></li>
+			<li><a href="/logout">Logout</a></li>
+			<% } %>
+    </ul>
+</nav>
+	<% if(locals.user){ %>
+		<p class="salut">Salut,<br/><%= user.username %></p>
+	<% } %>

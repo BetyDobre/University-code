@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	padding:0px;
+	text-indent:0;
+}
+
+h1{
+	font-family:'Lobster';
+	color:#801727;
+	font-size:3.5em;
+	text-align:center;
+	background-color:white;
+	text-decoration: underline; 
+	margin-bottom:20px;
+	padding: 5px;
+}
+
+body{
+	background-image:url("https://tetheredbyletters.com/wp-content/uploads/2014/12/Website-Background-Images-1024x6402.png");
+	background-repeat:repeat;
+}
+
+main{
+	margin:40px;
+	padding:5px;
+}
+
+h2{
+	font-family: Algerian;
+	background-color:white;
+	font-style:normal;
+	margin: 0.5em;
+	padding:0;
+}
+
+p{
+	//color:#801727;
+	background-color:white;
+	font-size:1em;
+	font-family: Comic Sans Ms;
+	font-weight: bold;
+	margin: 0.2em;
+}
+
+p::first-letter{
+	font-family: Algerian;
+	font-size: 1.5em;
+}
+
+main figcaption{
+	font-family: Comic Sans Ms;
+	color: white;
+	font-style:italic;
+	background-color: #801727;
+	font-size: 0.6em;
+	font-weight: bold;
+}
+
+p#copyright{
+	background:lightblue;
+	text-align:center;
+}
+
+footer{
+	width:100%;
+	position:sticky;
+	bottom:0;
+	margin:0;
+	padding:0;
+}

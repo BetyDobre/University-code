@@ -1,0 +1,187 @@
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+	background: linear-gradient(to right bottom, #801727, white);
+	padding: 10px;
+	border: 0.3em solid grey;
+	position: relative;
+	width: 100%;
+}
+
+.inviz{
+	display:none;
+}
+
+.viz {
+	display:table-row;
+}
+
+.grid-item{
+	padding:20px;
+	font-size:25px;
+	text-align:center;
+	display:inline-block;
+	align-self:center;
+}
+
+.grid-item:hover{
+	transform: scale(1.2);
+}
+
+/*paste*/
+@font-face{
+    font-family:'myFont';
+    src:url('../fonts/Double_Bubble_shadow.otf');
+}
+
+.pfontcustom{
+	font-family:'myFont';
+    background:linear-gradient(#d93648, #e3c8cb);
+}
+
+body{
+	counter-reset:figure;
+}
+
+figcaption::before{
+	counter-increment:figure;
+	content:"" counter(figure) ". ";
+}
+
+/*sticle*/
+.descriere{
+    column-count:3;
+    column-gap:3em;
+    column-rule:1px solid #801727;   
+}
+
+/*paste*/
+/*.imagine{	
+	float:right;
+	overflow:auto; 
+	opacity:0.5;
+	transition:0.5s linear;
+}
+
+.imagine:hover{
+	opacity:1;
+}*/
+
+/*craciun*/
+.glob{
+	width:30vw;
+	height:30vh;
+	background:red;
+	position:relative;
+	transition:width 2s;
+	transition-timing-function:ease-out;
+	animation: move 5s;
+}
+
+@keyframes move{
+  0%   {left: 0px;}
+  25%  {left: 300px;}
+  75%  {left: 600px}
+  100% {left: 900px;}
+}
+
+#cer {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: url('https://ak6.picdn.net/shutterstock/videos/3215686/thumb/1.jpg');
+  z-index:2;
+}
+
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background:url("../images/snowflake.jpg");
+
+}
+
+.glob:hover{
+	width:40vw;
+}
+
+/*lista preturi*/
+ol{
+	background:#801727;
+	padding:20px;
+	display:table-row;
+}
+
+ol li{
+	background:#801727;
+	padding:5px;
+	margin-left:35px;
+	color:white;
+}
+
+@media screen and (min-width:400px) and (max-width:850px){
+
+	.pfontcustom {
+		font-size:16px;
+	}
+	
+	main{
+		margin:3px;
+		padding:2px;
+	}
+	
+	main figcaption{
+		font-size:12px;
+		word-wrap:normal;
+	}
+	
+	figure{
+		width:100%;
+		padding:2px;
+	}
+	
+	img{
+		width:300px;
+		height:300px;
+		object-fit: cover;	
+	}
+	
+	.grid-container{
+		grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+	}
+	
+	.grid-item{
+		padding-left:0px;
+	}
+	
+}
+
+@media screen and (max-width:400px){
+	
+	.pfontcustom{
+		font-size:10px;
+	}
+	
+	main figcaption{
+		font-size:10px;
+		width:50%
+	}
+	
+	img{
+		height:100px;
+		width:100px;	
+		object-fit:cover;
+	}
+	
+	.grid-container{
+		width:100%;
+		padding:0;
+		margin:0;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+	
+	.grid-item{
+		width:min-content;
+	}
+}
+	

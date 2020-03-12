@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Clientii magazinului</title>
+
+	<meta charset="utf-8">
+	<meta name="author" content="Dobre Beatrice"/>
+	<link type="text/css" rel = "stylesheet" href="../css/css_general.css"/>
+	<link rel="stylesheet" type = "text/css" href="css/stil.css"/>
+	<style>
+	table td, table th{
+		border:1px solid black;
+	}
+	</style>
+</head>
+<body class="container">
+
+<header>
+    <%- include ("../fragmente/header") %>
+</header>
+
+<main>
+    <div class="afisaj">
+        <h1>Clienti</h1>
+    </div>
+	<table>
+	  <tr>
+		<th>id</th><th>Nume</th><th>Prenume</th><th>Email</th>
+	  </tr>
+	  <% for (var i = 0; i < clienti.length; i++) { %>
+		<tr>
+		  <td><%= clienti[i].id %></td>
+		  <td><%= clienti[i].nume %></td>
+		  <td><%= clienti[i].prenume %></td>
+		  <td><%= clienti[i].email %></td>
+		</tr>    
+	  <% } %>
+	</table>
+</main>
+
+<footer>
+    <%- include("../fragmente/footer")%>
+</footer>
+
+</body>
+</html>

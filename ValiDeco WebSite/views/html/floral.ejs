@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ro">
+
+<head>
+<title>Decoratiuni florale portelan </title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Tablouri si decoratiuni din flori de portelan pentru sufragerie/camere principale">
+	<meta name="keywords" content="produse, decoratiuni, handmade, portelan, flori, tablou, rece">
+	<meta name="author" content="Dobre Beatrice">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/css_general.css"/>
+	<link rel="stylesheet" type="text/css" href="css/grid.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/stil.css"/>
+	<script src="scripts/script.js"></script>
+</head>
+
+<body onload="loadPageFunction()">>
+
+<header>
+<%- include ("../fragmente/header")%>
+</header>
+
+<h1>Aranjamente si tablouri din flori de portelan la rece</h1>
+
+
+<main>
+
+
+<article>
+<p>Pentru cei pasionati si doritori, acesta este tutorialul dupa care am invatat eu sa realizez flori din portelan la rece:  </p>
+<video onload="loadFunction()" width="320" height="240" controls>
+  <source src="videos/trandafir.mp4" type="video/mp4">
+  <source src="videos/trandafir.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<p id = "incarcare"></p>
+<br/>
+
+</article>
+
+<br/><br/>
+<select name="sortPret" id = "modalitate">
+  <option value = "alege">Produse sortate...</option>
+  <option value="crescator">Pret crescator</option>
+  <option value="descrescator">Pret descrescator</option>
+</select>
+</br><br/>
+
+<input type = "range" min = "0" max = "100" step="10" id = "range" oninput = "rangeSort()" >0..100</label>
+<br/>
+<p id ="valoare"></p>
+<br/>
+<input type="text" id="myInput" onkeyup="search()" placeholder="Search for names.." title="Type in a name">
+<article class="grid-container">
+
+<figure class = "grid-item">
+<img src = "images/Floral/f1.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament floral din portelan la rece" height = "350" width = "300">
+<figcaption> Vaza cu flori de vara </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Floral/f2.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament floral din portelan la rece" height = "350" width = "300">
+<figcaption> Aranjament cu flori </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Floral/f3.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament floral din portelan la rece" height = "350" width = "300">
+<figcaption> Vaza cu flori de vara </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Floral/f4.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament floral din portelan la rece" height = "350" width = "300">
+<figcaption> Tablou cu diverse flori </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Floral/f6.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament floral din portelan la rece" height = "350" width = "300">
+<figcaption> Vaza decorata cu flori </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Floral/f7.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament floral din portelan la rece" height = "350" width = "300">
+<figcaption> Aranjament cu diverse flori colorate </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Floral/f8.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament floral din portelan la rece" height = "350" width = "300">
+<figcaption> Aranjament cu flori </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Floral/f9.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament floral din portelan la rece" height = "350" width = "300">
+<figcaption> Coperta de carte decorata cu flori </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Floral/f10.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament floral din portelan la rece" height = "350" width = "300">
+<figcaption> Tablou cu maci si spice de grau </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Floral/f11.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament floral din portelan la rece" height = "350" width = "300">
+<figcaption> Tablou cu buchet de flori</figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Floral/f12.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament floral din portelan la rece" height = "350" width = "300">
+<figcaption> Tablou cu un buchet de flori colorate </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Floral/f13.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament floral din portelan la rece" height = "350" width = "300">
+<figcaption> Tablou cu flori si tulpini pictate </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Floral/f14.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament floral din portelan la rece" height = "350" width = "300">
+<figcaption> Cos cu flori </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Floral/f15.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament floral din portelan la rece" height = "350" width = "300">
+<figcaption> Vaza cu maci </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Floral/f16.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament floral din portelan la rece" height = "350" width = "300">
+<figcaption> Vaza cu maci si spice de grau </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Floral/f19.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament floral din portelan la rece" height = "350" width = "300">
+<figcaption> Vaza cu maci si spice de grau </figcaption>
+</figure>
+<figure class = "grid-item">
+<img src = "images/Floral/f20.jpg" alt="Imaginea nu poate fi incarcata" title="Aranjament floral din portelan la rece" height = "350" width = "300">
+<figcaption> Vaza cu flori </figcaption>
+</figure>
+
+</article>
+
+<p>Preturi: </p>
+<ol id = "lista">
+	<li>60 LEI</li>
+	<li>50 LEI</li>
+	<li>50 LEI</li>
+	<li>100 LEI</li>
+	<li>60 LEI</li>
+	<li>140 LEI</li>
+	<li>50 LEI</li>
+	<li>100 LEI</li>
+	<li>150 LEI</li>
+	<li>150 LEI</li>
+	<li>150 LEI</li>
+	<li>140 LEI</li>
+	<li>60 LEI</li>
+	<li>50 LEI</li>
+	<li>50 LEI</li>
+	<li>60 LEI</li>
+	<li>80 LEI</li>
+</ol>
+</main>
+<footer>
+<%- include("../fragmente/footer")%>
+</footer>
+</body>
+
+<script src="scripts/scriptFlori.js"></script>
+</html>

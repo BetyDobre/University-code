@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Formular pentru a trimite comenzi">
+	<meta name="keywords" content="produse, decoratiuni, handmade,comanda">
+	<meta name="author" content="Dobre Beatrice">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/css_general.css"/>
+	<link rel="stylesheet" type="text/css" href="css/stil.css"/>
+</head>
+<body class = "container">
+
+<header>
+	<%- include ("../fragmente/header") %>
+</header>
+
+<main>
+<div class="afisaj">
+<%if(!locals.rsstatus){%>}
+	<form id ="myform" method = "post">
+	<p>
+	<label >Numele si prenumele:
+		<input type = "text" name = "nume" value = "">
+	</label>
+	</p>
+	<br/>
+	<p>
+	<label>Adresa de email:
+		<input type = "email" name = "email" value = "">
+	</label>
+	</p>
+	<p>
+	<label >Numar de telefon:
+		<input type = "text" name = "telefon" value = "">
+	</label>
+	</p>
+	<br/>
+	
+	<p>Categorie:</p>
+	<select id = "categorie">
+	<option value = "martisor">Martisor</option>
+	<option value = "paste">Paste</option>
+	<option value = "flori">Floral</option>
+	<option value = "craciun">Craciun</option>
+	<option value = "sticle">Sticle decorate</option>
+	</select>
+
+	<select name = "produs" id = "mySelect"></select>
+	<br/><br/>
+	<textarea name = "aditional" rows = "3" cols = "50"> Aici puteti adauga produse aditionale la comanda(ex: Craciun, 3.Aranjament de iarna cu lumanare) </textarea><br/><br/>
+
+	<p>Firma nu este responsabila cu parcursul produselor dupa ce au fost livrate curierului. Curierul trebuie sa efectueze livrarea in 2-3 zile lucratoare. Produsele pot fi returnate in termen de 30 de zile gratuit, in stare impecabila"</p>
+	<label><input type = "checkbox" name = "conditie" value = "conditii">Acceptati termenele si conditiile comenzii ?</label>
+	</br>
+	<label><input type = "checkbox" name = "noutati" value = "reclame">Doriti sa primiti noutati si oferte pe email?</label>
+	<br/>
+	
+	<p>Metoda de plata:</p>
+	<label><input type = "radio" name = "plata" value = "card" id = "card">Card online</label><br/>
+	<label><input type = "radio" name = "plata" value = "cash" id = "cash">Cash ramburs la curier</label><br/>
+	<label><input type = "radio" name = "plata" value = "cardramburs" id = "cashRamb">Cu cardul ramburs la curier</label><br/>
+	
+
+	<p id = "dateCard"></p>
+	<textarea rows = "1" cols = "13" id ="nrCard"></textarea>
+	<p id = "cvv"></p>
+	<br/>
+	<textarea rows = "1" cols = "3" id = "cvvCard"></textarea>
+
+	<p id = "salvatCard"></p>
+	<br/>
+	<p>Oras:</p>
+	<select name = "oras">
+	<option value = "alba">Alba-Iulia</option>
+	<option value = "arad">Arad</option>
+	<option value = "bacau">Bacau</option>
+	<option value = "baia">Baia-Mare</option>
+	<option value = "brasov">Brasov</option>
+	<option value = "braila">Braila</option>
+	<option value = "bucuresti">Bucuresti</option>
+	<option value = "buzau">Buzau</option>
+	<option value = "cluj">Cluj-Napoca</option>
+	<option value = "constanta">Constanta</option>
+	<option value = "craiova">Craiova</option>
+	<option value = "focsani">Focsani</option>
+	<option value = "galati">Galati</option>
+	<option value = "iasi">Iasi</option>
+	<option value = "pitesti">Pitesti</option>
+	<option value = "ploiesti">Ploiesti</option>
+	<option value = "sibiu">Sibiu</option>
+	<option value = "targoviste">Targoviste</option>
+	<option value = "timisoara">Timisoara</option>
+	<option value = "suceva">Suceava</option>
+	</select>
+
+	<br/>
+	<p>
+	<label>Adresa:
+		<input type = "text" name = "adresa" ><br/><br/>
+	</label>
+	</p>
+	<textarea name = "comments" rows = "5" cols = "50"> Aici puteti lasa comentarii aditionale despre comanda </textarea><br/><br/>
+	<input type = "submit" value = "Trimite">
+	<input type = "reset" onclick="javascript:window.location='index.html' "value = "Anuleaza"> 
+	</form>
+	<% } else if(rsstatus=="ok"){ %>
+		<p>Date introduse</p>
+	<% } else {%>
+		<p>Eroare ! Formularul nu a putut fi trimis. Va rugam reincercati !</p>
+	<% } %>
+	<br/>
+	<button id = "trimCard">Salveaza date card</button>
+</div>
+</main>
+
+<footer>
+	<%- include ("../fragmente/footer") %>
+</footer>
+</body>
+<script src="scripts/scriptFormular.js"></script>
+</html>

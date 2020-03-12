@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ro">
+
+<head>
+<title>Decoratiuni Martisor </title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Martisoare din diferite materiale pentru 1 martie">
+	<meta name="keywords" content="produse, decoratiuni, handmade, martisoare, cadou, Martisor">
+	<meta name="author" content="Dobre Beatrice">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/css_general.css"/>
+<link rel="stylesheet" type="text/css" href="css/grid.css"/>
+<link type="text/css" rel="stylesheet" href="../css/stil.css"/>
+<script src="scripts/script.js"></script>
+</head>
+
+<body onload="loadPageFunction()">>
+
+<header>
+<%- include ("../fragmente/header")%>
+</header>
+
+<h1>Martisoare pentru 1 martie</h1>
+
+
+<main>
+<div id = "bottom"></div>
+<br/><br/>
+<select name="sortPret" id = "modalitate">
+  <option value = "alege">Produse sortate...</option>
+  <option value="crescator">Pret crescator</option>
+  <option value="descrescator">Pret descrescator</option>
+</select>
+</br><br/>
+<input type = "range" min = "0" max = "100" step="10" id = "range" oninput = "rangeSort()" >0..100</label>
+<br/>
+<p id ="valoare"></p>
+<br/>
+<input type="text" id="myInput" onkeyup="search()" placeholder="Search for names.." title="Type in a name">
+<article class = "grid-container">
+<figure class="grid-item">
+<img src = "images/Martisor/m1.jpg" alt="Imaginea nu poate fi incarcata" title="Martisor" height = "300" width = "400">
+<figcaption> Martisoare de prins in piept realizate din portelan la rece </figcaption>
+</figure>
+<figure class="grid-item">
+<img src = "images/Martisor/m10.jpg" alt="Imaginea nu poate fi incarcata" title="Martisor" height = "400" width = "400">
+<figcaption> Martisor cu flori realizate din portelan la rece </figcaption>
+</figure>
+<figure class="grid-item">
+<img src = "images/Martisor/m5.jpg" alt="Imaginea nu poate fi incarcata" title="Martisor" height = "400" width = "400">
+<figcaption> Martisor cu flori realizate din portelan la rece </figcaption>
+</figure>
+<figure class="grid-item">
+<img src = "images/Martisor/m9.jpg" alt="Imaginea nu poate fi incarcata" title="Martisor" height = "400" width = "400">
+<figcaption> Martisor cu flori realizate din portelan la rece </figcaption>
+</figure>
+<figure class="grid-item">
+<img src = "images/Martisor/m4.jpg" alt="Imaginea nu poate fi incarcata" title="Martisor" height = "400" width = "400">
+<figcaption> Martisor cu flori realizate din portelan la rece </figcaption>
+</figure>
+<figure class="grid-item">
+<img src = "images/Martisor/m6.jpg" alt="Imaginea nu poate fi incarcata" title="Martisor" height = "450" width = "400">
+<figcaption> Martisor special cu flori realizate din portelan la rece pe material </figcaption>
+</figure>
+<figure class="grid-item">
+<img src = "images/Martisor/m8.jpg" alt="Imaginea nu poate fi incarcata" title="Martisor" height = "450" width = "400">
+<figcaption> Martisor special cu flori realizate din portelan la rece pe material </figcaption>
+</figure>
+<figure class="grid-item">
+<img src = "images/Martisor/m10.jpg" alt="Imaginea nu poate fi incarcata" title="Martisor" height = "400" width = "400">
+<figcaption> Martisor cu flori realizate din portelan la rece </figcaption>
+</figure>
+<figure class="grid-item">
+<img src = "images/Martisor/m11.jpg" alt="Imaginea nu poate fi incarcata" title="Martisor" height = "450" width = "400">
+<figcaption> Martisor cu flori realizate din portelan la rece </figcaption>
+</figure>
+<figure class="grid-item">
+<img src = "images/Martisor/m12.jpg" alt="Imaginea nu poate fi incarcata" title="Martisor" height = "450" width = "400">
+<figcaption> Cana tip martisor realizata din portelan la rece </figcaption>
+</figure>
+<figure class="grid-item">
+<img src = "images/Martisor/m13.jpg" alt="Imaginea nu poate fi incarcata" title="Martisor" height = "500" width = "400">
+<figcaption> Martisor cu flori realizate din portelan la rece </figcaption>
+</figure>
+
+</article>
+
+<p>Preturi: </p>
+<ol id = "lista">
+	<li>10 LEI</li>
+	<li>10 LEI</li>
+	<li>20 LEI</li>
+	<li>10 LEI</li>
+	<li>10 LEI</li>
+	<li>15 LEI</li>
+	<li>15 LEI</li>
+	<li>10 LEI</li>
+	<li>10 LEI</li>
+	<li>15 LEI</li>
+	<li>10 LEI</li>
+</ol>
+</main>
+<footer>
+<%- include("../fragmente/footer")%>
+</footer>
+</body>
+<script src="scripts/scriptMartisor.js"></script>
+</html>
