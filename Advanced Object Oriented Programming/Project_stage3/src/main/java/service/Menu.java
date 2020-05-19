@@ -697,7 +697,7 @@ public class Menu {
                                 scanner.nextLine();
                                 String numeTeatru = scanner.nextLine();
                                 System.out.print("Give the actors of the play: ");
-//                                scanner.nextLine();
+                                scanner.nextLine();
                                 String actori = scanner.nextLine();
                                 Teatru rez = new Teatru(name, oras, ora, durata, price ,date, numeTeatru, actori);
                                 repositoryFT.addSpectacol(rez);
