@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Advanced object oriented programming" />
-        <module name="Proiect" />
         <module name="OnlineReservationApp" />
+        <module name="Proiect" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="13" />

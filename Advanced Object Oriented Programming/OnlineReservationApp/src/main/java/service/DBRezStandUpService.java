@@ -44,7 +44,6 @@ public class DBRezStandUpService {
             }
             else {
                 System.out.println("Locul este ocupat !");
-//                return null;
             }
         };
     }

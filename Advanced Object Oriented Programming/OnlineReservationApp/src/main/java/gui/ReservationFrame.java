@@ -14,7 +14,7 @@ import javax.swing.*;
 import java.util.ArrayList;
 
 public class ReservationFrame extends JFrame {
-    private JPanel panel;
+
     private JLabel w = new JLabel("Make a reservation");
 
     private JLabel client = new JLabel("CLIENT: ");
@@ -81,15 +81,6 @@ public class ReservationFrame extends JFrame {
             int ora = Integer.parseInt(ora1.getText());
             int loc = Integer.parseInt(loc1.getText());
 
-//            if(tip.toLowerCase() == "teatru" || tip.toLowerCase() == "opera") {
-//                Rezervare r = new Rezervare();
-//                r.setNumeClient(username);
-//                r.setNumeSpectacol(nume);
-//                r.setOra(ora);
-//                r.setData(data);
-//                r.setLoc(loc);
-//                r.setSector(sector);
-//            }
             DBClientRepository crep = new DBClientRepository();
             Client c = crep.findClientByUsername(username);
             DBLoginService service = DBLoginService.getInstance();

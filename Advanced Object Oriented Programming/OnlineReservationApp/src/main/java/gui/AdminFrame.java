@@ -10,6 +10,7 @@ import repositories.theater.DBTeatruRepository;
 import javax.swing.*;
 
 public class AdminFrame extends JFrame {
+
     private JLabel w = new JLabel("Add a show(theater, opera, stand-up) !");
     private JLabel tip = new JLabel("SHOW TYPE: ");
     private JTextField tip1 = new JTextField(20);

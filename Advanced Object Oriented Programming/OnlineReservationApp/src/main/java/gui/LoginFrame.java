@@ -6,14 +6,14 @@ import service.DBLoginService;
 import javax.swing.*;
 
 public class LoginFrame extends JFrame {
+
     private JLabel w = new JLabel("Welcome !");
     private JLabel e1 = new JLabel("USERNAME:");
-    private JTextField t1 = new JTextField(20); //coloane, lungimea textului
+    private JTextField t1 = new JTextField(20);
     private JLabel e2 = new JLabel("PASSWORD:");
     private JPasswordField t2 = new JPasswordField(20);
-    private JButton loginButton = new JButton("LOGIN"); //text pe buton
+    private JButton loginButton = new JButton("LOGIN");
     private JButton signup = new JButton("SIGN UP");
-    private JPanel panel1;
 
     public LoginFrame() {
         super("Online reservations application !");
@@ -35,7 +35,7 @@ public class LoginFrame extends JFrame {
 
         loginButton.addActionListener(ev -> {
             String username = t1.getText();
-            String password = t2.getText(); //getter -> comportament implementat printr o metoda
+            String password = t2.getText();
 
             DBLoginService service = DBLoginService.getInstance();
 
