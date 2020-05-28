@@ -1,0 +1,23 @@
+Afisarea tuturor operelor,2020.05.28.12.16.57,Thread-0
+Afisare spectacole de teatru,2020.05.28.12.16.58,Thread-1
+Afisarea tuturor spectacolelor de stand up,2020.05.28.12.16.59,Thread-2
+Afisarea tuturor clientilor,2020.05.28.12.16.59,Thread-3
+Cautare spectacol de teatru dupa nume(Dineu cu prosti),2020.05.28.12.17.08,Thread-4
+Cautare spectacol de teatru dupa data(08.08.2020),2020.05.28.12.17.14,Thread-5
+Cautare spectacol de stand-up dupa ora(20),2020.05.28.12.17.26,Thread-6
+Adaugare client,2020.05.28.12.17.40,Thread-7
+Cautare client dupa nume(Bogdan),2020.05.28.12.17.52,Thread-8
+Cautare client dupa nume(Ioana),2020.05.28.12.18.05,Thread-9
+Login client,2020.05.28.12.18.05,Thread-10
+Cautare client dupa nume(Alex),2020.05.28.12.18.45,Thread-11
+Cautare spectacol de teatru dupa nume, data si ora,2020.05.28.12.18.45,Thread-12
+Cautare client dupa nume(Alex),2020.05.28.12.19.44,Thread-0
+Cautare client dupa nume(Alex),2020.05.28.12.19.44,Thread-2
+Cautare spectacole de stand up dupa nume, data si ora,2020.05.28.12.19.44,Thread-1
+Rezervare la spectacol de stand-up,2020.05.28.12.19.44,Thread-3
+Afisarea tuturor spectacolelor de teatru,2020.05.28.12.21.18,Thread-0
+Cautare spectacol de teatru dupa nume, data si ora,2020.05.28.12.28.03,Thread-1
+Cautare client dupa nume(Bogdan),2020.05.28.12.28.03,Thread-0
+Rezervare la spectacol de teatru,2020.05.28.12.28.03,Thread-3
+Cautare client dupa nume(Bogdan),2020.05.28.12.28.03,Thread-2
+Afisarea tuturor operelor,2020.05.28.12.34.42,Thread-0

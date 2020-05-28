@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1558722859 source:c:\users\betty\desktop\poo\proiect 3_poo\main.cpp
+	<iostream>
+	<list>
+	<cassert>
+	<exception>
+	<typeinfo>
+	"Multiset.h"
+
+1558721836 c:\users\betty\desktop\poo\proiect 3_poo\multiset.h
+	<iostream>
+	<list>
+	<cassert>
+	<exception>
+	<typeinfo>
+
