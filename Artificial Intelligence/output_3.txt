@@ -1,0 +1,18 @@
+
+Euristica euclidiana
+------------------ Concluzie -----------------------
+Drum de cost minim: 
+[dana ^ anda  ^ bob  ^ teo ]
+Timp de executie: 0.0011779999999999013
+
+Euristica Manhattan
+------------------ Concluzie -----------------------
+Drum de cost minim: 
+[dana ^ anda  ^ bob  ^ teo ]
+Timp de executie: 0.0006726999999999705
+
+Euristica inadmisibila
+------------------ Concluzie -----------------------
+Drum de cost minim: 
+[dana > cristian  ^ bogdan  ^ iustin  ^ eliza  < teo ]
+Timp de executie: 0.0013896000000013231

@@ -1,0 +1,18 @@
+
+Euristica euclidiana
+------------------ Concluzie -----------------------
+Drum de cost minim: 
+[ionel > alina  v diana  v costin  v simona  v razvan  v andrei  >> oana  ^ radu  > patricia  v victor  v nicoleta  >> maria  > gabi  ^ dorel  ^ elena  < gigel  ^ tamara  > dragos ]
+Timp de executie: 0.004257500000000025
+
+Euristica Manhattan
+------------------ Concluzie -----------------------
+Drum de cost minim: 
+[ionel > alina  v diana  v costin  v simona  v razvan  v andrei  >> oana  ^ radu  > patricia  v victor  v nicoleta  >> maria  > gabi  ^ dorel  ^ elena  < gigel  ^ tamara  > dragos ]
+Timp de executie: 0.0033121999999998764
+
+Euristica inadmisibila
+------------------ Concluzie -----------------------
+Drum de cost minim: 
+[ionel > alina  v diana  v costin  v simona  v razvan  v andrei  >> oana  ^ radu  > patricia  v victor  v nicoleta  >> maria  > gabi  ^ dorel  ^ elena  < gigel  ^ tamara  > dragos ]
+Timp de executie: 0.003803899999999416

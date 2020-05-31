@@ -1,0 +1,11 @@
+
+Euristica euclidiana
+------------------ Concluzie -----------------------
+Lista open e vida, nu avem drum de la nodul start la nodul scop
+Timp de executie: 0.0007017000000000273
+
+Euristica Manhattan
+------------------ Concluzie -----------------------
+Lista open e vida, nu avem drum de la nodul start la nodul scop
+Timp de executie: 0.00044010000000005434
+

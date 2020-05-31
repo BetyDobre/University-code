@@ -1,0 +1,13 @@
+
+Euristica euclidiana
+------------------ Concluzie -----------------------
+Drum de cost minim: 
+[ ionel ]
+Timp de executie: 0.0004376999999999853
+
+Euristica Manhattan
+------------------ Concluzie -----------------------
+Drum de cost minim: 
+[ ionel ]
+Timp de executie: 0.0004600999999999633
+
