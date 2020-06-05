@@ -29,4 +29,4 @@ in-genre binary classification by dialect task, in which a classification model 
 Naive Bayes, Complement Naive Bayes, Support Vector Machine. After hyperparameter optimization with grid search methods I applied a voting function between them.
 
 ## OnlineReservationApp
-Java application for sit reservation at different shows such as: theater plays, opera or stand-ups shows. I implemented other functionalities for finding shows by hour, date, name, make/delete an account, client login, add/update/delete shows with posibility to store the data in a database or in CSV files. A GUI for users is available as well. 
+Java application for seat reservation at different shows such as: theater plays, opera or stand-ups shows. I implemented other functionalities for finding shows by hour, date, name, make/delete an account, client login, add/update/delete shows with posibility to store the data in a database or in CSV files. A GUI for users is available as well. 
