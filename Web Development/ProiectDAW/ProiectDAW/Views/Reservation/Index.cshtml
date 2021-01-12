@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Current reservations";
+}
+
+<h2 class="page-header" style="text-align:center">@ViewBag.Title</h2>
+<img src="/images/reservation.jpg" height="400" style=" width:100%" alt="Trip" />
+<br />
+<br/>
+
+@if (ViewBag.Reservations != null)
+{
+    foreach (var reservation in ViewBag.Reservations)
+    {
+        <div class="panel-body table-bordered">
+            @Html.Label("Reservation date", "Reservation date: ")
+            <br />
+            <p>@reservation.DataRezervare</p>
+            @Html.Label("Number of persons", "Number of persons:")
+            <br />
+            <p>@reservation.NumarPersoane</p>
+            @Html.Label("Name of the booker", "Booker's name:")
+            <br />
+            <p>@reservation.NumeBooker</p>
+            @Html.Label("Phone number", "Phone Number:")
+            <br />
+            <p>@reservation.NumarTelefon</p>
+            <br />
+            @Html.Label("Trip", "Trip:")
+            <br />
+            <p>@reservation.Trip.Nume</p>
+
+        </div>
+        using (Html.BeginForm(actionName: "Edit", controllerName: "Reservation", method: FormMethod.Get, routeValues: new { id = reservation.ReservationId }))
+        {
+            <button style="margin-right:5px" class="btn btn-info col-lg-1" type="submit">Edit</button>
+        }
+        using (Html.BeginForm(actionName: "Delete", controllerName: "Reservation", method: FormMethod.Post, routeValues: new { id = reservation.ReservationId }))
+        {
+            @Html.HttpMethodOverride(HttpVerbs.Delete)
+            <button class="btn btn-info col-lg-1" type="submit">Delete</button>
+        }
+        <br />
+        <br />
+    }
+}
+@if (ViewBag.Reservations == null)
+
+{
+    <div class="panel-body">
+        @Html.Label("No reservations", "No reservations to show")
+    </div>
+}
+<div class="text-center">
+    @Html.ActionLink("Add new reservation", "New", "Reservation", new { @class = "btn btn-info" })
+</div>
+

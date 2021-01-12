@@ -1,0 +1,56 @@
+﻿@model ProiectDAW.Models.ViewModels.TripViewModel
+@{
+    ViewBag.Title = "Add new trip";
+}
+
+<h2 class="page-header" style="text-align:center">@ViewBag.Title</h2>
+<h2>@ViewBag.Title</h2>
+<br />
+
+@using (Html.BeginForm(actionName: "New", controllerName: "Trip", method: FormMethod.Post))
+{
+    @Html.Label("Name", "Name:")
+    <br />
+    @Html.TextBoxFor(b => b.Nume, null, new { placeholder = "Type the start date of the trip", @class = "form-control form-control-lg" })
+    @Html.ValidationMessageFor(b => b.Nume, "", new { @class = "text-danger" })
+    <br />
+    @Html.Label("Location", "Location:")
+    <br />
+    @Html.TextBoxFor(b => b.Locatie, null, new { placeholder = "Type the end date of the trip", @class = "form-control form-control-lg" })
+    @Html.ValidationMessageFor(b => b.Locatie, "", new { @class = "text-danger" })
+    <br />
+    @Html.Label("Description", "Description:")
+    <br />
+    @Html.TextBoxFor(b => b.Descriere, null, new { placeholder = "Type the end date of the trip", @class = "form-control form-control-lg" })
+    @Html.ValidationMessageFor(b => b.Descriere, "", new { @class = "text-danger" })
+    <br />
+    @Html.Label("Price", "Price:")
+    <br />
+    @Html.TextBoxFor(b => b.Pret, null, new { placeholder = "Type the end date of the trip", @class = "form-control form-control-lg" })
+    @Html.ValidationMessageFor(b => b.Pret, "", new { @class = "text-danger" })
+    <br />
+
+    @Html.Label("Period", "Period:")
+    <br />
+    @Html.Label("Start date", "Start date:")
+    <br />
+    @Html.TextBoxFor(b => b.Data_inceput, null, new { placeholder = "Type the end date of the trip", @class = "form-control form-control-lg" })
+    @Html.ValidationMessageFor(b => b.Pret, "", new { @class = "text-danger" })
+    <br />
+    @Html.Label("End date", "End date:")
+    <br />
+    @Html.TextBoxFor(b => b.Data_sfarsit, null, new { placeholder = "Type the end date of the trip", @class = "form-control form-control-lg" })
+    @Html.ValidationMessageFor(b => b.Data_sfarsit, "", new { @class = "text-danger" })
+    <br />
+    <br />
+
+    @Html.Label("Category", "Category:")
+
+    @Html.EditorFor(x => x.Categories)
+    <br />
+    <br />
+
+    <button class="btn btn-info" type="submit">Add</button>
+}
+
+

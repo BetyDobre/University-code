@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Available trips";
+}
+
+<h2 class="page-header" style="text-align:center">@ViewBag.Title</h2>
+<img src="/images/trip.jpg" height="300" style=" width:100%" alt="Trip" />
+<br />
+<br />
+
+@if (ViewBag.Trips != null)
+{
+    foreach (var trip in ViewBag.Trips)
+    {
+
+        <div class="panel-info table-bordered">
+            @Html.Label("Name", "Name:")
+            <p>@trip.Nume</p>
+            <br />
+            @Html.Label("Location", "Location:")
+            <p>@trip.Locatie</p>
+            <br />
+            @Html.Label("Start date", "Start date:")
+            <p>@trip.Period.Data_inceput</p>
+            <br />
+            @Html.Label("End date", "End date:")
+            <p>@trip.Period.Data_sfarsit</p>
+            <br />
+
+        </div>
+        using (Html.BeginForm(actionName: "Details", controllerName: "Trip", method: FormMethod.Get, routeValues: new { id = trip.TripId }))
+        {
+            <button style="margin-right:5px; border-radius: 5px" class="btn-info" type="submit">See more...</button>
+        }
+
+        <br />
+        <br />
+    }
+}
+
+@if (ViewBag.Trips == null)
+
+{
+    <div class="panel-body">
+        //@Html.Display("No Trips to show!")
+        @Html.Label("No Trips", "No Trips to show")
+    </div>
+}
+
+@if (User.IsInRole("Admin"))
+{
+    <div class="text-center">
+        @Html.ActionLink("Add new trip", "New", "Trip", new { @class = "btn btn-info" })
+    </div>
+}

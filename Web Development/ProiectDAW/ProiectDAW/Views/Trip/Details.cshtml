@@ -1,0 +1,59 @@
+﻿@model ProiectDAW.Models.Trip
+@{
+    ViewBag.Title = "More about this trip";
+}
+
+<h2 class="page-header" style="text-align:center">@ViewBag.Title</h2>
+
+
+
+<div class="panel-body">
+    @Html.Label("Name", "Name:")
+    <br />
+    <p>@Model.Nume</p>
+
+    @Html.Label("Location", "Location:")
+    <br />
+    <p>@Model.Locatie</p>
+
+    @Html.Label("Description", "Description:")
+    <br />
+    <p>@Model.Descriere</p>
+
+    @Html.Label("Price", "Price:")
+    <br />
+    <p>@Model.Pret</p>
+
+    @Html.Label("Start date", "Start date:")
+    <br />
+    <p>@Model.Period.Data_inceput</p>
+    @Html.Label("End date", "End date:")
+    <br />
+    <p>@Model.Period.Data_sfarsit</p>
+
+    @Html.Label("Categories", "Categories:")
+    <br />
+
+    @foreach (var category in Model.Categories)
+    {
+        <p>@category.Nume</p>
+    }
+
+</div>
+
+@if (User.IsInRole("Admin"))
+{
+    using (Html.BeginForm(actionName: "Edit", controllerName: "Trip", method: FormMethod.Get, routeValues: new { id = Model.TripId }))
+    {
+        <button style="margin-right:5px" class="btn btn-info col-lg-1" type="submit">Update</button>
+    }
+    using (Html.BeginForm(actionName: "Delete", controllerName: "Trip", method: FormMethod.Post, routeValues: new { id = Model.TripId }))
+    {
+        @Html.HttpMethodOverride(HttpVerbs.Delete)
+        <button class="btn btn-info col-lg-1" type="submit">Delete</button>
+    }
+}
+<br />
+<br />
+   
+

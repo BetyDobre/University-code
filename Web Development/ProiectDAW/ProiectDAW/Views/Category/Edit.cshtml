@@ -1,0 +1,23 @@
+﻿@model ProiectDAW.Models.Category
+@{
+    ViewBag.Title = "Update";
+}
+<h2 class="page-header" style="text-align:center">@ViewBag.Title</h2>
+<br />
+
+
+@using (Html.BeginForm(actionName: "Edit", controllerName: "Category"))
+{
+    @Html.HttpMethodOverride(HttpVerbs.Put)
+
+    @Html.HiddenFor(b => b.CategoryId)
+    <br />
+    @Html.Label("Name of the category", "Name of the category:")
+    <br />
+    @Html.EditorFor(b => b.Nume, new { htmlAttributes = new { @class = "form-control form-control-lg" } })
+    @Html.ValidationMessageFor(b => b.Nume, "", new { @class = "text-danger" })
+    <br />
+    <br />
+
+    <button class="btn btn-info" type="submit">Update</button>
+}

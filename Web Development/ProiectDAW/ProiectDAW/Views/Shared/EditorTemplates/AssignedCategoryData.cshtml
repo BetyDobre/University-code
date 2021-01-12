@@ -1,0 +1,9 @@
+﻿@model AssignedCategoryData
+@using ProiectDAW.Models.ViewModels;
+
+<fieldset>
+    @Html.HiddenFor(model => model.CategoryId)
+    @Html.HiddenFor(model => model.Nume)
+    @Html.CheckBoxFor(model => model.Assigned)
+    @Html.DisplayFor(model => model.Nume)
+</fieldset>

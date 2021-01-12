@@ -1,0 +1,48 @@
+﻿@model ProiectDAW.Models.Reservation
+@{
+    ViewBag.Title = "Book a trip";
+}
+
+<h2 class="page-header" style="text-align:center">@ViewBag.Title</h2>
+<br />
+
+@using (Html.BeginForm(actionName: "New", controllerName: "Reservation", method: FormMethod.Post))
+
+{
+    @Html.Label("Date", "Date of reservation:")
+    <br />
+    <br />
+    @Html.DisplayTextFor(b => b.DataRezervare)
+    <br />
+    <br />
+    @Html.Label("Name of the booker", "Name of the booker:")
+    <br />
+    <br />
+    @Html.TextBoxFor(b => b.NumeBooker, null, new { placeholder = "Type the start date of the trip", @class = "form-control form-control-lg" })
+    @Html.ValidationMessageFor(b => b.NumeBooker, "", new { @class = "text-danger" })
+    <br />
+    <br />
+    @Html.Label("Telephone Number", "Telephone Number:")
+    <br />
+    <br />
+    @Html.TextBoxFor(b => b.NumarTelefon, null, new { placeholder = "Type the end date of the trip", @class = "form-control form-control-lg" })
+    @Html.ValidationMessageFor(b => b.NumarTelefon, "", new { @class = "text-danger" })
+    <br />
+    <br />
+    @Html.Label("Number of persons", "Number of persons:")
+    <br />
+    <br />
+    @Html.TextBoxFor(b => b.NumarPersoane, null, new { placeholder = "Type the end date of the trip", @class = "form-control form-control-lg" })
+    @Html.ValidationMessageFor(b => b.NumarPersoane, "", new { @class = "text-danger" })
+    <br />
+    <br />
+    @Html.Label("Trip", "Trip:")
+    <br />
+    <br />
+    @Html.DropDownListFor(b => b.TripId, new SelectList(Model.TripsList, "Value", "Text"), "Choose a trip", new { @class = "form-control form-control-lg" })
+    @Html.ValidationMessageFor(b => b.TripId, "", new { @class = "text-danger" })
+    <br />
+    <br />
+
+    <button class="btn btn-info" type="submit">Add</button>
+}

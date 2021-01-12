@@ -1,0 +1,18 @@
+﻿@model ProiectDAW.Models.Category
+@{
+    ViewBag.Title = "Add new category";
+}
+<h2 class="page-header" style="text-align:center">@ViewBag.Title</h2>
+<br />
+
+@using (Html.BeginForm(actionName: "New", controllerName: "Category", method: FormMethod.Post))
+{
+    @Html.Label("Name of the category", "Name of the category:")
+    <br />
+    @Html.TextBoxFor(b => b.Nume, null, new { placeholder = "Type the start date of the trip", @class = "form-control form-control-lg" })
+    @Html.ValidationMessageFor(b => b.Nume, "", new { @class = "text-danger" })
+    <br />
+
+
+    <button class="btn btn-info" type="submit">Add</button>
+}

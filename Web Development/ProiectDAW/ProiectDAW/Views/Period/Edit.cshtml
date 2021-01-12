@@ -1,0 +1,29 @@
+﻿@model ProiectDAW.Models.Period
+@{
+    ViewBag.Title = "Edit an existing period";
+}
+
+<h2 class="page-header" style="text-align:center">@ViewBag.Title</h2>
+<br />
+@using (Html.BeginForm(actionName: "Edit", controllerName: "Period"))
+{
+    @Html.HttpMethodOverride(HttpVerbs.Put)
+    <!--camp ascuns pentru a retine id-ul obiectului-->
+    @Html.HiddenFor(b => b.PeriodId)
+    <br />
+    @Html.Label("Start Date", "Period start date:")
+    <br />
+    @Html.EditorFor(b => b.Data_inceput, new { htmlAttributes = new { @class = "form-control form-control-lg" } })
+    @Html.ValidationMessageFor(b => b.Data_inceput, "", new { @class = "text-danger" })
+    <br />
+    <br />
+    @Html.Label("End date", "End date:")
+    <br />
+    @Html.EditorFor(b => b.Data_sfarsit, new { htmlAttributes = new { @class = "form-control form-control-lg " } })
+    @Html.ValidationMessageFor(b => b.Data_sfarsit, "", new { @class = "text-danger" })
+    <br />
+    <br />
+
+    <br />
+    <button class="btn btn-info" type="submit">Update</button>
+}

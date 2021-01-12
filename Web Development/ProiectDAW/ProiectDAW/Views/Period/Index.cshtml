@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Available periods for trips";
+}
+
+<h2 class="page-header" style="text-align:center">@ViewBag.Title</h2>
+<img src="/images/calendar.jpg" height="400" style=" width:100%" alt="Trip" />
+<br />
+
+
+@if (ViewBag.Periods != null)
+{
+    foreach (var period in ViewBag.Periods)
+    {
+        <div class="panel-body">
+            @Html.Label("Start date", "Start date:")
+            <br />
+            <p>@period.Data_inceput</p>
+            @Html.Label("End date", "End date:")
+            <br />
+            <p>@period.Data_sfarsit</p>
+        </div>
+        using (Html.BeginForm(actionName: "Edit", controllerName: "Period", method: FormMethod.Get, routeValues: new { id = period.PeriodId }))
+        {
+            <button style="margin-right:5px" class="btn btn-info col-lg-1" type="submit">Edit</button>
+        }
+        using (Html.BeginForm(actionName: "Delete", controllerName: "Period", method: FormMethod.Post, routeValues: new { id = period.PeriodId }))
+        {
+            @Html.HttpMethodOverride(HttpVerbs.Delete)
+            <button class="btn btn-info col-lg-1" type="submit">Delete</button>
+        }
+        <br />
+        <br />
+    }
+}
+@if (ViewBag.Periods == null)
+
+{
+    <div class="panel-body">
+        //@Html.Display("No periods to show!")
+        @Html.Label("No periods", "No periods to show")
+    </div>
+}
+<br/>

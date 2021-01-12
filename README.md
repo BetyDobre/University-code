@@ -30,3 +30,7 @@ Naive Bayes, Complement Naive Bayes, Support Vector Machine. After hyperparamete
 
 ## OnlineReservationApp
 Java application for seat reservation at different shows such as: theater plays, opera or stand-ups shows. I implemented other functionalities for finding shows by hour, date, name, make/delete an account, client login, add/update/delete shows with posibility to store the data in a database or in CSV files. A GUI for users is available as well. 
+
+## Web Development
+
+C# and .NET technologies are used to create a trip reservation web application. There are implemented all relationships between tables(one-to-one, one-to-many, many-to-many) and CRUD for every model. Also, authentication is available as well. Only the Admin can add, edit and delete trips, only Bookers can book places on trips, edit or delete their reservations and unauthenticated users can only see the trips available.

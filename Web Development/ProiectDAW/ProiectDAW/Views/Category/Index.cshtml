@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Current categories";
+}
+
+<h2 class="page-header" style="text-align:center">@ViewBag.Title</h2>
+<img src="/images/category.jpg" height="300" style=" width:100%" alt="Trip" />
+<br />
+
+@if (ViewBag.Categories != null)
+{
+    foreach (var category in ViewBag.Categories)
+    {
+        <div class="panel-body">
+            @Html.Label("Name", "Name:")
+            <br />
+            <p>@category.Nume</p>
+        </div>
+        using (Html.BeginForm(actionName: "Edit", controllerName: "Category", method: FormMethod.Get, routeValues: new { id = category.CategoryId }))
+        {
+            <button style="margin-right:5px" class="btn btn-info col-lg-1" type="submit">Edit</button>
+        }
+        using (Html.BeginForm(actionName: "Delete", controllerName: "Category", method: FormMethod.Post, routeValues: new { id = category.CategoryId }))
+        {
+            @Html.HttpMethodOverride(HttpVerbs.Delete)
+            <button class="btn btn-info col-lg-1" type="submit">Delete</button>
+        }
+        <br />
+        <br />
+    }
+}
+@if (ViewBag.Categories == null)
+
+{
+    <div class="panel-body">
+        @Html.Label("No periods", "No categories to show")
+    </div>
+}
+
+<br />
+<div class="text-center">
+    @Html.ActionLink("Add new category", "New", "Category", new { @class = "btn btn-info" })
+</div>

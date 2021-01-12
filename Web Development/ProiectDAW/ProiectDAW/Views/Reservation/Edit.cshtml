@@ -1,0 +1,43 @@
+﻿@model ProiectDAW.Models.Reservation
+@{
+    ViewBag.Title = "Edit a reservation";
+}
+
+<h2 class="page-header" style="text-align:center">@ViewBag.Title</h2>
+<br />
+
+@using (Html.BeginForm(actionName: "Edit", controllerName: "Reservation"))
+{
+    @Html.HttpMethodOverride(HttpVerbs.Put)
+
+    @Html.Label("Reservation date", "Reservation date:")
+    @Html.DisplayTextFor(b => b.DataRezervare)
+    <br />
+    <br />
+    @Html.HiddenFor(b => b.ReservationId)
+    <br />
+    @Html.Label("Name", "Bookers name:")
+    <br />
+    @Html.EditorFor(b => b.NumeBooker, new { htmlAttributes = new { @class = "form-control form-control-lg" } })
+    @Html.ValidationMessageFor(b => b.NumeBooker, "", new { @class = "text-danger" })
+    <br />
+    <br />
+    @Html.Label("Phone number", "Phone number:")
+    <br />
+    @Html.EditorFor(b => b.NumarTelefon, new { htmlAttributes = new { @class = "form-control form-control-lg" } })
+    @Html.ValidationMessageFor(b => b.NumarTelefon, "", new { @class = "text-danger" })
+    <br />
+    <br />
+    @Html.Label("Number of persons", "Number of persons:")
+    <br />
+    @Html.EditorFor(b => b.NumarPersoane, new { htmlAttributes = new { @class = "form-control form-control-lg" } })
+    @Html.ValidationMessageFor(b => b.NumarPersoane, "", new { @class = "text-danger" })
+    <br />
+    <br />
+    @Html.Label("Trip", "Trip:")
+    @Html.DropDownListFor(b => b.TripId, new SelectList(Model.TripsList, "Value", "Text"), "Choose a trip", new { @class = "form - control" })
+    @Html.ValidationMessageFor(b => b.TripId, "", new { @class = "text-danger" })
+    <br />
+    <br />
+    <button class="btn btn-info" type="submit">Edit</button>
+}
