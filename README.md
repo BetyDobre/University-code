@@ -34,3 +34,19 @@ Java application for seat reservation at different shows such as: theater plays,
 ## Web Development
 
 C# and .NET technologies are used to create a trip reservation web application. There are implemented all relationships between tables(one-to-one, one-to-many, many-to-many) and CRUD for every model. Authentication is available as well. Only the Admin can add, edit and delete trips, only Bookers can book places on trips, edit or delete their reservations and unauthenticated users can only see the trips available.
+
+# iOS Development - ChatApp
+
+## Features available:
+
+* Google Sign In
+* Email/Password Registration and Log In
+* User Profile
+* Real Time Conversations
+* Photo Messages
+* Video Messages
+* Location Messages
+* Search for Users
+* Deleting Conversations
+* Dark Mode Support
+* Display comments using REST API
